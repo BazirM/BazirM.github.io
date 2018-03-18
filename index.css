@@ -5,6 +5,9 @@ header{
 		color: white;
 		padding: 10px;
 	}
+	body{
+	  margin:0;
+	}
 
 	nav{
 		margin: 0;
