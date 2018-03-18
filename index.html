@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta name="description" content="Find it!">
+	<meta name="author" content="Marcos">
+<style>
+	header{
+		/*background-color: #100b0a;*/
+		/*background: linear-gradient(to bottom right, black, grey);*/
+		background: linear-gradient(black, grey);
+		color: white;
+		padding: 15px;
+	}
+
+	nav{
+		margin: 0;
+		padding: 0;
+		position: -webkit-sticky; /* Safari */
+    	position: sticky;
+    	top: 0;
+	}
+	nav ul {
+		list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #e6e6e6;
+	}
+
+	nav ul li {
+		float: left;
+		border-right:1px solid #bbb; /*linhas a separar as tabs*/
+		/*display: inline;*/
+	}
+
+	nav ul li a {
+	display: block;
+    color: black;
+    text-shadow:2px 2px 4px #e6e6e6;
+    font-family: Verdana;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	}
+
+
+	nav ul li a:hover{ 
+	background-color: #99284f;
+	color:white;
+	}
+
+	.active {
+    background-color: #99284f;
+    color:white;
+	}
+
+	header h1 {
+		padding: 1px;
+		font-family: Verdana;
+	}
+
+	section{
+		background-color: lightgrey;
+		font-family: Verdana;
+		/*margin: 0px;*/
+		padding: 10px;
+	}
+
+	section h2{
+	color:#99284f;
+	text-shadow:2px 2px 4px #737373;
+	}
+
+	section h2:hover{ 
+	transition: all .2s ease-in-out;
+	font-size: 40px; 
+	color: #ff9900;
+	text-shadow:2px 2px 4px #737373;
+	shape-rendering: 10px;
+}
+
+	article p{
+		margin:6px;
+	}
+
+	article{
+		background-color: white;
+		border-radius: 10px;
+		padding:5px;
+	}
+
+	article h4{
+		margin:4px;
+	}
+
+	footer{
+		background: linear-gradient(black, grey);
+		color: white;
+		font-family: Verdana;
+		font-size:13px;
+		padding:1px;
+	}
+
+	footer p {
+		margin:4px;
+		color: #99284f;
+	}
+
+	footer ul li{
+		list-style-type: none;
+	}
+
+	footer ul li a:link {
+    color: white;
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+	ul span{
+		 float:right; 
+		 color:#e6e6e6; 
+		 margin:3px
+	}
+
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<h1>Marcos Bazir Matos</h1>
+		<p style="font-family: Verdana;">Computer Scientist</p>
+	</header>
+<nav>
+	<ul>
+	<li><b><a class="active" href="index.html">Home</a></b></li>
+	<li><b><a href="#">Projects</a></b></li>
+	<li><b><a href="#">Skills</a></b></li>
+</nav>
+
+<section>
+	<h2><span style="color:#ff9900;">Sob</span>re mim</h2>
+	<article>
+		<p>Sou um finalista que pretende consolidar o conhecimento adquirido durante o percurso académico e, além disso, possuo grande interesse em explorar a área da computação e programação a nível profissional. <br>Procuro colaborar com os colegas de trabalho, de forma a alcançar os objetivos propostos e ainda, aprimorar e expandir as minhas competências informáticas.
+		</p>
+</section>
+
+<section>
+	<h2><span style="color:#ff9900;">Edu</span>cação</h2>
+	<article>
+			<p>
+			<b>Universidade do Minho</b><i style="color:lightblue;"> (Campus Gualtar, Braga)</i><br>
+			<i style="color:lightgrey;">2014 - Presente</i><br>
+			Licenciatura em Ciências da Computação
+			<br>
+			<br>
+			<b>Escola Secundária Carlos Amarante</b> <i style="color:lightblue;"> (R. da Restauração 65, Braga)</i><br>
+			Ensino Secundário em Ciências e Tecnologias
+		</p>
+</section>
+
+<section>
+	<h2><span style="color:#ff9900;">Com</span>petências pessoais</h2>
+	<article>
+		<h4>Competências de Organização:</h4>
+		<ul>
+			<li>Bom sentido de organização e de responsabilidade;</li>
+			<li>Capacidade de liderança e de gestão de projetos;</li>
+			<li>Aptidão e gosto por uma aprendizagem contínua.</li>
+		</ul>
+		<h4>Competências de Comunicação:</h4>
+		<ul>
+			<li>Bom espírito de trabalho em equipa e a capacidade de saber ouvir e comunicar, adquiridas na realização de diversos projetos como estudante;</li>
+			<li>Boa capacidade de comunicação oral e excelente aptidão para a comunicação escrita;</li>
+			<li>Flexibilidade na discussão de ideias;</li>
+			<li>Boa capacidade de adaptação a ambientes multiculturais.</li>
+		</ul>
+
+	</section>
+<!--
+	<section>
+		<h2>Interesses</h2>
+		<article>
+		<figure>
+			<center><img src="interests.png" alt="Interesses" width="400" height="350">
+		</figure></center>
+	</article> 
+</section> -->
+
+<footer>
+	<p>Contact me: <br>
+		<ul>
+			<li><a href="maito:marzir@live.com">marzir@live.com</a></li>
+			<span>
+			<i>Developed by Marcos</i>
+			</span>
+			<li>(+351) 91 544 14 92</li>
+		</ul>
+		
+	</footer>
+</body>
+</html>
