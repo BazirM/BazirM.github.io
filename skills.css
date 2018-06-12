@@ -1,4 +1,4 @@
-::selection{ /*pseudo elemento*/
+::selection{ 
 	background-color: #ffa64d;
 }
 
@@ -24,6 +24,7 @@ header h1:hover{
 * {
 	box-sizing: border-box;
 }
+
 	body{
 		margin:0;
 		padding: 0;
@@ -80,10 +81,12 @@ header h1:hover{
 		background-color: lightgrey;
 		font-family: Verdana;
 		/*margin: 0px;*/
-		padding: 10px;
-		max-width: 500px
+		padding: 1px;
+		max-width: 600px
 		margin:auto;
-		height:600px;
+		margin: 4px;
+		overflow: none;
+		height: 500px;
 	}
 
 	section h3{
@@ -100,39 +103,186 @@ header h1:hover{
 	shape-rendering: 10px;
 }
 
-section div.circle{
+section div#circle1{
 	border-radius:100%;
-	display: flex;
-	align-items: center;
+	transform: translate(500px, 150px);
+	display: inline-block;
+	text-align: center;
     justify-content: center;
-	width:100px;
-	height:100px;
-	background-color:#0080ff;
-	box-shadow: 2px 2px 5px lightblue;
-	animation-name: circulo;
-	animation-duration: 10s;
+	width:150px;
+	border-style: solid;
+	border-color: #99284f;
+	border-width: 7px;
+	padding: 40px;
+	background: linear-gradient(grey,black);
+	color: white;
+	position: relative;
+	box-shadow: -1px 3px 5px #dd8c3c, -1px 4px 10px #99284f;
+	animation-name: circulo1;
+	animation-duration: 1s;
+	animation-fill-mode: both;
 	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
+	/*animation-iteration-count: infinite;*/
 }
 
-@keyframes circulo {
+section div#circle1:hover, section div#circle2:hover, section div#circle3:hover,
+section div#circle4:hover, section div#circle5:hover {
+	background: linear-gradient(#99284f,#dd8c3c);
+}
+
+section div#circle2{
+	border-radius:100%;
+	transform: translate(500px, 150px);
+	display: inline-block;
+	text-align: center;
+    justify-content: center;
+	width:150px;
+	border-style: solid;
+	border-color: #99284f;
+	border-width: 7px;
+	padding: 40px;
+	background: linear-gradient(grey,black);
+	color: white;
+	position: relative;
+	box-shadow: -1px 3px 5px #dd8c3c, -1px 4px 10px #99284f;
+	animation-name: circulo2;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+
+section div#circle3{
+	border-radius:100%;
+	transform: translate(500px, 150px);
+	display: inline-block;
+	text-align: center;
+    justify-content: center;
+	width:150px;
+	border-style: solid;
+	border-color: #99284f;
+	border-width: 7px;
+	padding: 40px;
+	background: linear-gradient(grey,black);
+	color: white;
+	position: relative;
+	box-shadow: -1px 3px 5px #dd8c3c, -1px 4px 10px #99284f;
+	animation-name: circulo3;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+
+section div#circle4{
+	border-radius:100%;
+	transform: translate(500px, 150px);
+	display: inline-block;
+	text-align: center;
+    justify-content: center;
+	width:150px;
+	border-style: solid;
+	border-color: #99284f;
+	border-width: 7px;
+	padding: 40px;
+	background: linear-gradient(grey,black);
+	color: white;
+	position: relative;
+	box-shadow: -1px 3px 5px #dd8c3c, -1px 4px 10px #99284f;
+	animation-name: circulo4;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+
+section div#circle5{
+	border-radius:100%;
+	transform: translate(500px, 150px);
+	display: inline-block;
+	text-align: center;
+    justify-content: center;
+	width:150px;
+	border-style: solid;
+	border-color: #99284f;
+	border-width: 7px;
+	padding: 40px;
+	background: linear-gradient(grey,black);
+	color: white;
+	position: relative;
+	box-shadow: -1px 3px 5px #dd8c3c, -1px 4px 10px #99284f;
+	animation-name: circulo5;
+	animation-duration: 1s;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}
+
+/*section div#circle6{
+	border-radius:100%;
+	transform: translate(100px, 150px);
+	display: inline-block;
+	text-align: center;
+    justify-content: center;
+	width:150px;
+	border-style: solid;
+	border-color: #99284f;
+	border-width: 7px;
+	padding: 40px;
+	background: linear-gradient(grey,black);
+	color: white;
+	position: relative;
+	box-shadow: -1px 3px 5px #dd8c3c, -1px 4px 10px #99284f;
+	animation-name: circulo6;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+}*/
+
+@keyframes circulo1 {
+	from{transform: translate(500px, 150px); border-color: #dd8c3c;}
+	to{transform: translate(40px, 40px); border-color: #99284f;}
 	/*from{background-color: red;}
 	to{background-color: yellow;}*/
-	0% {background-color: red;}
-	25%{background-color: blue; transform: translate(10px,20px);}
-	50%{background-color: lightblue; transform: translate(100px,200px);}
+	/*0% {border-color: #dd8c3c;}
+	25%{border-color: #dd8c3c; transform: translate(10px,20px);}
+	50%{border-color: #99284f; transform: translate(100px,200px);}
+	75%{border-color: #99284f;}*/
 }
 
-div.circle p {
-color: white;
+@keyframes circulo2 {
+	from{transform: translate(500px, 150px); border-color: #dd8c3c;}
+	to{transform: translate(90px, 40px); border-color: #99284f;}
 }
+
+@keyframes circulo3 {
+	from{transform: translate(500px, 150px); border-color: #dd8c3c;}
+	to{transform: translate(140px, 40px); border-color: #99284f;}
+}
+
+@keyframes circulo4 {
+	from{transform: translate(500px, 150px); border-color: #dd8c3c;}
+	to{transform: translate(190px, 40px); border-color: #99284f;}
+}
+
+@keyframes circulo5{
+	from{transform: translate(500px, 150px); border-color: #dd8c3c;}
+	to{transform: translate(240px, 40px); border-color: #99284f;}
+}
+
+/*@keyframes circulo6{
+	from{transform: translate(140px, 250px); border-color: #dd8c3c;}
+	to{transform: translate(140px, 40px); border-color: #99284f;}
+}*/
+
 footer{
 		background: linear-gradient(black, grey);
 		color: white;
 		font-family: Verdana;
 		font-size:13px;
 		margin: 0;
-		padding:1px;
+		padding:10px;
 		border-top-style: solid;
     	border-top-color: #99284f;
     	border-top-width: 5px;
